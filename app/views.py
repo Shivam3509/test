@@ -47,5 +47,5 @@ class DestroyView(RetrieveUpdateDestroyAPIView):
     def get_permissions(self):
         if self.request.method == "GET":
 
-            return []
+            return [{}]
         return super().get_permissions()
